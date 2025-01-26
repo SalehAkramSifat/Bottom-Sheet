@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         binding.showBottomSheet.setOnClickListener {
             alertDialog()
         }
@@ -36,7 +37,6 @@ class MainActivity : AppCompatActivity() {
             }
         builder.create().show()
     }
-
     fun showBottomShet(){
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet, null)
