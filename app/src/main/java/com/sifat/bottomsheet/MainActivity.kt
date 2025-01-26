@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity() {
     fun showBottomShet(){
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet, null)
-
         dialog.setCancelable(true)
         dialog.setContentView(view)
         dialog.show()
